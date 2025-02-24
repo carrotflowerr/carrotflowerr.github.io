@@ -1,0 +1,336 @@
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem_with_linux</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"}>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1b" />
+
+    <meta name="description" content="Problem_with_linux">
+
+    
+        <title>Problem_with_linux | My New Hugo Site</title>
+    
+
+    
+    <style>
+        :root {
+          --background: #ffffff;
+        }
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --background: #1b1b1b;
+          }
+        }
+        html {
+            background-color: var(--background);
+        }
+        body {
+            background-color: var(--background);
+        }
+    </style>
+
+    
+    <link rel="stylesheet" type="text/css" href="/style.min.375e5ed55aac1492efe66cf6fd686d0af88cb56b12d6bafab6571d3b39c73883.css" media="all">
+  </head>
+
+  <body>
+        
+        <nav>
+          <ul class="menu">
+            
+          </ul>
+        </nav>
+        
+
+
+
+
+<div id="single-header">
+  <h1>
+    Problem_with_linux
+  </h1>
+  <div id="single-meta">
+    
+    
+        <span class="datesub">Feb 14, 2025</span>
+      
+
+  </div>
+</div>
+
+
+
+
+
+<main><h1 id="the-problem-with-powerusers">The problem with powerusers</h1>
+<p><a href="../bloglist" >back</a>
+</p>
+<p><a href="../distro" >For my thoughts on
+distributions</a>
+</p>
+<hr>
+<p>There is a trend in the GNU/Linux world that likely prevail for the rest
+of time. Windows poweruser has issue with windows, windows poweruser
+tries linux, windows poweruser gets frustrated, windows poweruser goes
+back to windows. It is a tale as old as time. If you happen to be a
+Linux user, you probably used to be a Windows poweruser. So whats the
+difference between fail and success?</p>
+<p>The &quot;skill cap&quot; for Windows is certianly lower than that of Linux.
+Once you're using Windows Debloat, using complex software, pirating
+video games, and maybe doing some batch scripting, you're at the peak
+of what you can do with Windows.</p>
+<p>I think what would be most helpful is talking to and about Windows users
+understanding this. Know that many of their problems are going to be
+growing pains. Try to translate their knowledge.</p>
+<p>There are 3 main reasons people use linux.</p>
+<ol>
+<li>Freedom</li>
+<li>FREEdom</li>
+<li>Necessity</li>
+</ol>
+<p>Free as in free beer, free as in freedom. Freedom is the most likely
+one. People switching for the merits of Linux. These are almost always
+powerusers. Those concerned with price are probably also tech savvy, but
+they could not be. For example, latin america and india loves linux
+because the USD conversion to buy Windows or MacOS is crazy. Necessity
+is in reference to the computers limits. For servers, Linux is really
+the only option. Same situation for very low performance machines. The
+latter two are very likely to stick with Linux. It is much more worth it
+for them. The first would be savvy enough to re-pirate Windows in an
+afternoon.</p>
+</main>
+
+
+
+
+<br>
+
+<footer>
+
+<script defer>
+  document.addEventListener("keydown", function (e) {
+    if (document.activeElement.isContentEditable) {
+      return false;
+    }
+    if (document.activeElement.tagName == "INPUT") {
+      return false;
+    }
+    if (e.altKey || e.ctrlKey || e.shiftKey) {
+      return false;
+    }
+    var key = e.key;
+    if (key === "h") {
+      e.preventDefault();
+      e.stopPropagation();
+      window.location.href = "/";
+    } else if (key === "t") {
+      e.preventDefault();
+      e.stopPropagation();
+      window.location.href = `https://${location.hostname}/tags`;
+    } else if (key === "i") {
+      e.preventDefault();
+      e.stopPropagation();
+      const inputs = document.querySelectorAll("input");
+      for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].offsetParent !== null) {
+          inputs[i].selectionStart = inputs[i].selectionEnd =
+            inputs[i].value.length;
+          inputs[i].focus();
+          break;
+        }
+      }
+    }
+    return false;
+  });
+</script>
+
+
+<script defer>
+  function throttle(fn, wait) {
+    var time = Date.now();
+    return function () {
+      var now = Date.now()
+      if (time + wait - now < 0) {
+        fn();
+        time = now;
+      }
+    };
+  }
+
+  function scrollHandler() {
+    const anchors = Array.from(document.querySelectorAll("body h2, body h3"));
+
+    function scrollCallback() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      
+      for (var i = 0; i < anchors.length; i++) {
+        var anchorId = anchors[i].getAttribute("id");
+        var link = document.querySelector(
+          'nav ul li a[href="#' + anchorId + '"]',
+        );
+        if (link) {
+          link.classList.remove("active-toc");
+        }
+      }
+
+      
+      for (var i = anchors.length - 1; i >= 0; i--) {
+        var offsetTop = anchors[i].offsetTop;
+        if (scrollTop > offsetTop - 75) {
+          var anchorId = anchors[i].getAttribute("id");
+          var link = document.querySelector(
+            'nav ul li a[href="#' + anchorId + '"]',
+          );
+          if (link) {
+            link.classList.add("active-toc");
+            break;
+          }
+        }
+      }
+    }
+
+    window.addEventListener(
+      "scroll",
+      throttle(scrollCallback, 200),
+    );
+  }
+  setTimeout(scrollHandler, 100);
+</script>
+
+<script defer>
+  function addCopyButtonToCodeBlocks() {
+    
+    const codeBlocks = document.querySelectorAll('code[class^="language-"]');
+
+    codeBlocks.forEach((codeBlock) => {
+      const copyButton = document.createElement("button");
+      copyButton.classList.add("copy-code-button");
+      copyButton.innerHTML = "copy";
+
+      
+      copyButton.addEventListener("click", () => {
+        
+        const elements = codeBlock.querySelectorAll(".cl");
+        let codeToCopy = "";
+        elements.forEach((element) => {
+          codeToCopy += element.innerText;
+        });
+        navigator.clipboard.writeText(codeToCopy);
+
+        
+        copyButton.innerHTML = "copied!";
+        setTimeout(() => {
+          copyButton.innerHTML = "copy";
+        }, 1500);
+      });
+
+      
+      codeBlock.parentNode.before(copyButton);
+    });
+  }
+  setTimeout(function () {
+    addCopyButtonToCodeBlocks();
+  }, 100);
+</script>
+
+<script>
+window.store = {
+    
+    "http:\/\/localhost:1313\/blog\/": {
+        "title": "Blogs",
+        "tags": [],
+        "content": "", 
+        "url": "http:\/\/localhost:1313\/blog\/"
+    },
+    
+    "http:\/\/localhost:1313\/blog\/distro\/": {
+        "title": "Distro",
+        "tags": [],
+        "content": "back I've distrohopped a lot in my day. These are just the ones I used for a long period of time.\n{width=\u0026ldquo;200\u0026rdquo; height=\u0026ldquo;200\u0026rdquo;}\n(2020-2021) Manjaro Yeah, I know. I fully installed and daily drove Manjaro for a bit more than a year. I used Gnome desktop manager with it and had minimal issues with the distrobition itself. My problems were all to do with the learning curve of linux itself. Now, Manjaro has had a few fuckies, and I didn't notice or care about any of them. In the end, a vital package didn't update correctly and I couldn't recover the system from the bootloader.\n{width=\u0026ldquo;210\u0026rdquo; height=\u0026ldquo;200\u0026rdquo;}\n(2021-2022) NixOS Nix was my next choice because I liked the idea of stability. NixOS is incredible, but also a clusterfuck. The documentation is ass. The Nix language is unintuitive very frustrating to use. For someone who knows the language, this distro may be perfect. But I'm a more of a technological traditionalist. I want something to do one thing, and do it well. In this way I align with the suckless philosophy.\n{width=\u0026ldquo;160\u0026rdquo; height=\u0026ldquo;200\u0026rdquo;}\n(2022-2024) Debian Finally. A real distribution. At long last I used one of the 4 serious distros (that being arch, fedora, opensuse, and of course, debian). There are two main versions of Debian. That being stable, and unstable. My school laptop runs stable. I cannot have it out of commision for any period of time. My desktop, on the other hand, runs unstable.\n", 
+        "url": "http:\/\/localhost:1313\/blog\/distro\/"
+    },
+    
+    "http:\/\/localhost:1313\/blog\/problem_with_linux\/": {
+        "title": "Problem_with_linux",
+        "tags": [],
+        "content": "The problem with powerusers back For my thoughts on distributions There is a trend in the GNU/Linux world that likely prevail for the rest of time. Windows poweruser has issue with windows, windows poweruser tries linux, windows poweruser gets frustrated, windows poweruser goes back to windows. It is a tale as old as time. If you happen to be a Linux user, you probably used to be a Windows poweruser. So whats the difference between fail and success?\nThe \u0026quot;skill cap\u0026quot; for Windows is certianly lower than that of Linux. Once you're using Windows Debloat, using complex software, pirating video games, and maybe doing some batch scripting, you're at the peak of what you can do with Windows.\nI think what would be most helpful is talking to and about Windows users understanding this. Know that many of their problems are going to be growing pains. Try to translate their knowledge.\nThere are 3 main reasons people use linux.\nFreedom FREEdom Necessity Free as in free beer, free as in freedom. Freedom is the most likely one. People switching for the merits of Linux. These are almost always powerusers. Those concerned with price are probably also tech savvy, but they could not be. For example, latin america and india loves linux because the USD conversion to buy Windows or MacOS is crazy. Necessity is in reference to the computers limits. For servers, Linux is really the only option. Same situation for very low performance machines. The latter two are very likely to stick with Linux. It is much more worth it for them. The first would be savvy enough to re-pirate Windows in an afternoon.\n", 
+        "url": "http:\/\/localhost:1313\/blog\/problem_with_linux\/"
+    },
+    
+    "http:\/\/localhost:1313\/blog\/wrestler\/": {
+        "title": "Wrestler",
+        "tags": [],
+        "content": "back The Wrestler Confuses Me Spoilers\nThe Wrestler is a 2008 movie starring Mickey Rourke and Marisa Tomei. The movie is based around a once prolific professional wrestler coping primarily with his aging body. Other difficulties include financial instability, estrangement from his daughter, and an unrequited love. Rourke, playing the wrestler, is able to relate to this, being a boxer himself. So we have these plot points, right? Lets go through each one of them starting with the unrequited love.\nThe first time we see the love interest is in a strip club, where she works. Customers aren\u0026rsquo;t treating her well and our main character intervenes. It is implied by the way they talk to each other that they have known each other for a while. Eventually, he asks her out on a date. She initially denies, but changes her mind after they empathize because of their kids. During the date, he says some things that makes her regret the choice. She breaks it off, he gets mad. But before his last big match she quits being a stripper and goes to the show, trying to convince him not to preform.\nThe relationship here is pretty clear. Both of them use their bodies for work in way that may be harmful. Cassidy\u0026rsquo;s relationship to her job alienates people, and alienates her from herself. Randy does the same. Before his last match, he had a heart attack and was told not to wrestle anymore. Him choosing to wrestle despite this is him choosing the tail side of his double life. Cassidy, however quit. She cared more about being a mother, and a partner.\nRandy\u0026rsquo;s health is the driving conflict of the movie. Without the heart attack he would continue to sustain himself through it and simply get by. Like Cassidy, he\u0026rsquo;s shown to go through the motions of wrestling as if it were just a job. The heart attack served as a catalyst of change. He tried to get a job at a deli, but couldn\u0026rsquo;t maintain it because of anger issues, or something. He got recognized and decided to punch the meat slicing machine. In the context of the movie it makes sense, but Randy is only shown as a very level headed person except for this. In the last scene, he\u0026rsquo;s doing his last match. It\u0026rsquo;s built up as something he has to do. It\u0026rsquo;s a self sacrifice. It\u0026rsquo;s Randy returning to old habits because it\u0026rsquo;s simply all he knows how to do. We are dreading this match, and Cassidy is our voice. When she\u0026rsquo;s trying to talk Randy out of it he claims that the ring is where he belongs. He does it for the crowd. This is perplexing to me. Other than some apathetic signing of posters and a meat slicer punching his fans are rarely mentioned. His past as a more successful wrestler is a ghost throughout the movie. It haunts him through branded memorabilia and video games. But he seems at peace with it. He\u0026rsquo;s okay being washed up, as long as the bills are paid. Which is why this ending is so strange to me.\nDuring this final match he has another heart attack. He fights through it and hits his signature move from the top ropes, and the movie ends. I think this implies he died during the match. The mission of the movie was for Randy to step out of the shadow of his past self and find something else to live for. He fails in this. His mission to reconnect with his daughter also fails. His relationship with Cassidy had hope! But he died, so it failed. What then, is the point of the movie? Is it about sacrifice? Was he right to die for the art? Is it about the economy? Not really, he could\u0026rsquo;ve kept the job and been fine if he didn\u0026rsquo;t punch a meat slicer. When we see him kill himself for this match what are we supposed to think? Do we commend him for being himself or do we shun him for failing to become who he potentially could be? I don\u0026rsquo;t think the context of the movie really allows us any of these opinions. What we see is a failure to empathize with, and that is all.\n", 
+        "url": "http:\/\/localhost:1313\/blog\/wrestler\/"
+    },
+    
+    "http:\/\/localhost:1313\/blog\/bloglist\/": {
+        "title": "Blog List",
+        "tags": [],
+        "content": "back Contents Thoughts on Bluesky | Added: 10/14/24 Opinions on linux distributions | Added: 10/14/24 The Wrestler Confuses Me | Added: 12/01/24 Why powerusers have trouble with Linux| Added: 2024-12-18 In progress:\nLooking At Mythology Thelemic Will The Aesthetic Virtue of Religion ", 
+        "url": "http:\/\/localhost:1313\/blog\/bloglist\/"
+    },
+    
+    "http:\/\/localhost:1313\/": {
+        "title": "",
+        "tags": [],
+        "content": "Zimblonia Evil Genius and shitposter extraordinaire\nContact / Sites /\nBlog /\nSource /\nDownload the Bible ", 
+        "url": "http:\/\/localhost:1313\/"
+    },
+    
+    "http:\/\/localhost:1313\/blog\/bluesky\/": {
+        "title": "Bluesky",
+        "tags": [],
+        "content": "back Some brief thoughts on BlueSky BlueSky is now the most popular alternative to Twitter (X). After a few months of use here are my thoughts:\n1) BlueSky has yet to find it's identity. BlueSky currently starts and ends at being the \u0026quot;not twitter.\u0026quot; They're developing new terms like skeet and reskeet (instead of tweet) which is cute. If it keeps existing out of rebellion it will soon fade into obscurity like threads.\n2) BlueSky is pleasant The toxicity on BlueSky is non-existant compaired to twitter. You see what you want (thanks to feeds) and not much else.\n3) BlueSky is boring Not many people you would want to follow are there for you to follow. Nothing funny happens. If you come from the old internet like me, it feels very plain. It does, however, have porn.\n4) BlueSky is not decentralized I'll refer you here for a detailed technical explination.\n", 
+        "url": "http:\/\/localhost:1313\/blog\/bluesky\/"
+    },
+    
+    "http:\/\/localhost:1313\/categories\/": {
+        "title": "Categories",
+        "tags": [],
+        "content": "", 
+        "url": "http:\/\/localhost:1313\/categories\/"
+    },
+    
+    "http:\/\/localhost:1313\/tags\/": {
+        "title": "Tags",
+        "tags": [],
+        "content": "", 
+        "url": "http:\/\/localhost:1313\/tags\/"
+    },
+    
+}
+</script>
+
+
+    <script defer src="/js/lunr.js"></script>
+    <script defer src="/js/search.js"></script>
+
+
+</footer>
+
+</body>
+</html>
+

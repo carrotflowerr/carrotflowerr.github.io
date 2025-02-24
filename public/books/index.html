@@ -1,0 +1,374 @@
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"}>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1b" />
+
+    <meta name="description" content="">
+
+    
+        <title> | My New Hugo Site</title>
+    
+
+    
+    <style>
+        :root {
+          --background: #ffffff;
+        }
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --background: #1b1b1b;
+          }
+        }
+        html {
+            background-color: var(--background);
+        }
+        body {
+            background-color: var(--background);
+        }
+    </style>
+
+    
+    <link rel="stylesheet" type="text/css" href="/style.min.375e5ed55aac1492efe66cf6fd686d0af88cb56b12d6bafab6571d3b39c73883.css" media="all">
+  </head>
+
+  <body>
+        
+        <nav>
+          <ul class="menu">
+            
+          </ul>
+        </nav>
+        
+
+
+
+
+<div id="single-header">
+  <h1>
+    
+  </h1>
+  <div id="single-meta">
+    
+      
+
+  </div>
+</div>
+
+
+
+
+
+<main><p><a href="https://carrotflowerr.github.io/blog/blogList"  target="_blank" rel="noreferrer nofollow">back</a>
+</p>
+<p>::: title</p>
+<h3 id="books-ive-read-this-year-2024">Books I've read this year (2024)</h3>
+<p>:::</p>
+<ol>
+<li>The Book of the Law - Aleister Crowley</li>
+<li>Science of Logic - Georg Wilhelm Friedrich Hegel</li>
+<li>Memorial - Angela of Foligno</li>
+<li>Mysticism: A Study in the Nature and Development of Spiritual
+Consciousness - Evelyn Underhill</li>
+<li>The Essential Kabbalah - Daniel C. Matt</li>
+<li>Continued study of religious texts
+<ul>
+<li>Tanakh</li>
+<li>Zohar</li>
+<li>Translation of the Quran</li>
+<li>Christian Bible (and non-canonical scripture)</li>
+<li>Vedas</li>
+</ul>
+</li>
+</ol>
+<p>::: title</p>
+<h3 id="books-i-would-like-to-read-next-year-2025">Books I would like to read next year (2025)</h3>
+<p>:::</p>
+<ol>
+<li>Fahrenheit 451 - Ray Bradbury</li>
+<li>Catch 22 - Joseph Heller</li>
+<li>I, Robot - Asimov</li>
+<li>Something by H.P Lovecraft</li>
+<li>Something by Harold Bloom</li>
+</ol>
+<p><a href="https://carrotflowerr.github.io/contact-info"  target="_blank" rel="noreferrer nofollow">Give me suggestions!</a>
+</p>
+</main>
+
+
+
+
+<br>
+
+<footer>
+
+<script defer>
+  document.addEventListener("keydown", function (e) {
+    if (document.activeElement.isContentEditable) {
+      return false;
+    }
+    if (document.activeElement.tagName == "INPUT") {
+      return false;
+    }
+    if (e.altKey || e.ctrlKey || e.shiftKey) {
+      return false;
+    }
+    var key = e.key;
+    if (key === "h") {
+      e.preventDefault();
+      e.stopPropagation();
+      window.location.href = "/";
+    } else if (key === "t") {
+      e.preventDefault();
+      e.stopPropagation();
+      window.location.href = `https://${location.hostname}/tags`;
+    } else if (key === "i") {
+      e.preventDefault();
+      e.stopPropagation();
+      const inputs = document.querySelectorAll("input");
+      for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].offsetParent !== null) {
+          inputs[i].selectionStart = inputs[i].selectionEnd =
+            inputs[i].value.length;
+          inputs[i].focus();
+          break;
+        }
+      }
+    }
+    return false;
+  });
+</script>
+
+
+<script defer>
+  function throttle(fn, wait) {
+    var time = Date.now();
+    return function () {
+      var now = Date.now()
+      if (time + wait - now < 0) {
+        fn();
+        time = now;
+      }
+    };
+  }
+
+  function scrollHandler() {
+    const anchors = Array.from(document.querySelectorAll("body h2, body h3"));
+
+    function scrollCallback() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      
+      for (var i = 0; i < anchors.length; i++) {
+        var anchorId = anchors[i].getAttribute("id");
+        var link = document.querySelector(
+          'nav ul li a[href="#' + anchorId + '"]',
+        );
+        if (link) {
+          link.classList.remove("active-toc");
+        }
+      }
+
+      
+      for (var i = anchors.length - 1; i >= 0; i--) {
+        var offsetTop = anchors[i].offsetTop;
+        if (scrollTop > offsetTop - 75) {
+          var anchorId = anchors[i].getAttribute("id");
+          var link = document.querySelector(
+            'nav ul li a[href="#' + anchorId + '"]',
+          );
+          if (link) {
+            link.classList.add("active-toc");
+            break;
+          }
+        }
+      }
+    }
+
+    window.addEventListener(
+      "scroll",
+      throttle(scrollCallback, 200),
+    );
+  }
+  setTimeout(scrollHandler, 100);
+</script>
+
+<script defer>
+  function addCopyButtonToCodeBlocks() {
+    
+    const codeBlocks = document.querySelectorAll('code[class^="language-"]');
+
+    codeBlocks.forEach((codeBlock) => {
+      const copyButton = document.createElement("button");
+      copyButton.classList.add("copy-code-button");
+      copyButton.innerHTML = "copy";
+
+      
+      copyButton.addEventListener("click", () => {
+        
+        const elements = codeBlock.querySelectorAll(".cl");
+        let codeToCopy = "";
+        elements.forEach((element) => {
+          codeToCopy += element.innerText;
+        });
+        navigator.clipboard.writeText(codeToCopy);
+
+        
+        copyButton.innerHTML = "copied!";
+        setTimeout(() => {
+          copyButton.innerHTML = "copy";
+        }, 1500);
+      });
+
+      
+      codeBlock.parentNode.before(copyButton);
+    });
+  }
+  setTimeout(function () {
+    addCopyButtonToCodeBlocks();
+  }, 100);
+</script>
+
+<script>
+window.store = {
+    
+    "http:\/\/localhost:1313\/": {
+        "title": "",
+        "tags": [],
+        "content": "::: title\nZimblonia :::\n::: banner Evil Genius and shitposter extraordinaire\nContact / Sites / Blog / Source / Download the Bible :::\n::: buttons ::: vim :::\n::: deb ::: :::\n", 
+        "url": "http:\/\/localhost:1313\/"
+    },
+    
+    "http:\/\/localhost:1313\/blog\/": {
+        "title": "Blogs",
+        "tags": [],
+        "content": "", 
+        "url": "http:\/\/localhost:1313\/blog\/"
+    },
+    
+    "http:\/\/localhost:1313\/blog\/bluesky\/": {
+        "title": "Bluesky",
+        "tags": [],
+        "content": "back Some brief thoughts on BlueSky BlueSky is now the most popular alternative to Twitter (X). After a few months of use here are my thoughts:\n1) BlueSky has yet to find it's identity. BlueSky currently starts and ends at being the \u0026quot;not twitter.\u0026quot; They're developing new terms like skeet and reskeet (instead of tweet) which is cute. If it keeps existing out of rebellion it will soon fade into obscurity like threads.\n2) BlueSky is pleasant The toxicity on BlueSky is non-existant compaired to twitter. You see what you want (thanks to feeds) and not much else.\n3) BlueSky is boring Not many people you would want to follow are there for you to follow. Nothing funny happens. If you come from the old internet like me, it feels very plain. It does, however, have porn.\n4) BlueSky is not decentralized I'll refer you here for a detailed technical explination.\n", 
+        "url": "http:\/\/localhost:1313\/blog\/bluesky\/"
+    },
+    
+    "http:\/\/localhost:1313\/bloglist\/": {
+        "title": "",
+        "tags": [],
+        "content": "back Contents Opinions on linux distributions | Added: 10/14/24 {#toc-introduction} The Wrestler Confuses Me | Added: 12/01/24 Reading List | Updated: 12/01/24 How To Have Good Takes | 12/13/24 Why powerusers have trouble with Linux| Added: 2024-12-18 The founder of the free needle program | Added: 2024-12-31 In progress:\nLooking At Mythology Thelemic Will The Aesthetic Virtue of Religion ", 
+        "url": "http:\/\/localhost:1313\/bloglist\/"
+    },
+    
+    "http:\/\/localhost:1313\/bluesky\/": {
+        "title": "",
+        "tags": [],
+        "content": "back Some brief thoughts on BlueSky BlueSky is now the most popular alternative to Twitter (X). After a few months of use here are my thoughts:\n1) BlueSky has yet to find it's identity. BlueSky currently starts and ends at being the \u0026quot;not twitter.\u0026quot; They're developing new terms like skeet and reskeet (instead of tweet) which is cute. If it keeps existing out of rebellion it will soon fade into obscurity like threads.\n2) BlueSky is pleasant The toxicity on BlueSky is non-existant compaired to twitter. You see what you want (thanks to feeds) and not much else.\n3) BlueSky is boring Not many people you would want to follow are there for you to follow. Nothing funny happens. If you come from the old internet like me, it feels very plain. It does, however, have porn.\n4) BlueSky is not decentralized I'll refer you here for a detailed technical explination.\n", 
+        "url": "http:\/\/localhost:1313\/bluesky\/"
+    },
+    
+    "http:\/\/localhost:1313\/books\/": {
+        "title": "",
+        "tags": [],
+        "content": "back ::: title\nBooks I've read this year (2024) :::\nThe Book of the Law - Aleister Crowley Science of Logic - Georg Wilhelm Friedrich Hegel Memorial - Angela of Foligno Mysticism: A Study in the Nature and Development of Spiritual Consciousness - Evelyn Underhill The Essential Kabbalah - Daniel C. Matt Continued study of religious texts Tanakh Zohar Translation of the Quran Christian Bible (and non-canonical scripture) Vedas ::: title\nBooks I would like to read next year (2025) :::\nFahrenheit 451 - Ray Bradbury Catch 22 - Joseph Heller I, Robot - Asimov Something by H.P Lovecraft Something by Harold Bloom Give me suggestions! ", 
+        "url": "http:\/\/localhost:1313\/books\/"
+    },
+    
+    "http:\/\/localhost:1313\/problem-with-linux\/": {
+        "title": "",
+        "tags": [],
+        "content": "The Main Struggle With Linux back There is a trend in the GNU/Linux world that likely prevail for the rest of time. Windows poweruser has issue with windows, windows poweruser tries linux, windows poweruser gets frustrated, windows poweruser goes back to windows. It is a tale as old as time. If you happen to be a Linux user, you probably used to be a Windows poweruser. So whats the difference between fail and success?\nThe \u0026quot;skill cap\u0026quot; for Windows is certianly lower than that of Linux. Once you're using Windows Debloat, using complex software, pirating video games, and maybe doing some batch scripting, you're at the peak of what you can do with Windows.\nI think what would be most helpful is talking to and about Windows users understanding this. Know that many of their problems are going to be growing pains. Try to translate their knowledge.\nThere are 3 main reasons people use linux.\nFreedom FREEdom Necessity Free as in free beer, free as in freedom. Freedom is the most likely one. People switching for the merits of Linux. These are almost always powerusers. Those concerned with price are probably also tech savvy, but they could not be. For example, latin america and india loves linux because the USD conversion to buy Windows or MacOS is crazy. Necessity is in reference to the computers limits. For servers, Linux is really the only option. Same situation for very low performance machines. The latter two are very likely to stick with Linux. It is much more worth it for them. The first would be savvy enough to re-pirate Windows in an afternoon.\n", 
+        "url": "http:\/\/localhost:1313\/problem-with-linux\/"
+    },
+    
+    "http:\/\/localhost:1313\/problem_with_linux\/": {
+        "title": "",
+        "tags": [],
+        "content": "The problem with powerusers back For my thoughts on distributions There is a trend in the GNU/Linux world that likely prevail for the rest of time. Windows poweruser has issue with windows, windows poweruser tries linux, windows poweruser gets frustrated, windows poweruser goes back to windows. It is a tale as old as time. If you happen to be a Linux user, you probably used to be a Windows poweruser. So whats the difference between fail and success?\nThe \u0026quot;skill cap\u0026quot; for Windows is certianly lower than that of Linux. Once you're using Windows Debloat, using complex software, pirating video games, and maybe doing some batch scripting, you're at the peak of what you can do with Windows.\nI think what would be most helpful is talking to and about Windows users understanding this. Know that many of their problems are going to be growing pains. Try to translate their knowledge.\nThere are 3 main reasons people use linux.\nFreedom FREEdom Necessity Free as in free beer, free as in freedom. Freedom is the most likely one. People switching for the merits of Linux. These are almost always powerusers. Those concerned with price are probably also tech savvy, but they could not be. For example, latin america and india loves linux because the USD conversion to buy Windows or MacOS is crazy. Necessity is in reference to the computers limits. For servers, Linux is really the only option. Same situation for very low performance machines. The latter two are very likely to stick with Linux. It is much more worth it for them. The first would be savvy enough to re-pirate Windows in an afternoon.\n", 
+        "url": "http:\/\/localhost:1313\/problem_with_linux\/"
+    },
+    
+    "http:\/\/localhost:1313\/takes\/": {
+        "title": "",
+        "tags": [],
+        "content": "back ", 
+        "url": "http:\/\/localhost:1313\/takes\/"
+    },
+    
+    "http:\/\/localhost:1313\/takes_ind\/": {
+        "title": "",
+        "tags": [],
+        "content": "Page 1 {target=\u0026ldquo;contents\u0026rdquo;}\nPage 2 {target=\u0026ldquo;contents\u0026rdquo;}\\\n", 
+        "url": "http:\/\/localhost:1313\/takes_ind\/"
+    },
+    
+    "http:\/\/localhost:1313\/takess\/": {
+        "title": "",
+        "tags": [],
+        "content": "[]{#1}How to have good takes\nBeing level headed doesn\u0026rsquo;t mean fence riding, and nuance doesn\u0026rsquo;t require you to water down your opinion. A common trend I see in classrooms and public discourse is the flaying of strongly held beliefs. Tell me how many times you\u0026rsquo;ve heard this in school:\nTeacher: \u0026ldquo;*Okay class, do you think X is correct or Y is correct?\u0026rdquo;\n*Student: \u0026ldquo;*Well really it\u0026rsquo;s a mix of the two\u0026rdquo; *Or *\u0026ldquo;it\u0026rsquo;s a spectrum\u0026rdquo; *or *\u0026ldquo;it depends\u0026rdquo; *or \u0026ldquo;it\u0026rsquo;s subjective.\u0026rdquo;\nThe cause of this is 2 things. Firstly, having a strong opinion is hard to defend. You need to be knowledgeable about the topic to argue for it. In contrast, defending something abstract like the subjectivity of morals is much easier. By arguing abstractly we\u0026rsquo;re moving above the question rather than diving into it, and attempting to find it\u0026rsquo;s gooey core. Second, we are always expected to have opinions on everything. We are simply not allowed to be quiet. Adding fluff nuance to hide the lack of opinion seems like the path of least resistance. I\u0026rsquo;m sure you\u0026rsquo;ve seen this on the hyper-sensationalized state of politics as it exists on social media. The problem is that it\u0026rsquo;s boring, and not productive. Look, it\u0026rsquo;s bullshitting, I get it. I\u0026rsquo;m really fucking good at bullshitting my way through something I don\u0026rsquo;t know. It\u0026rsquo;s because I can see exactly how it\u0026rsquo;s done that it irritates me so much. I feel like a Gen X dad watching my son hiding weed smell with cologne. Like dude, you\u0026rsquo;re insulting my intelligence. In metaphysics it\u0026rsquo;s a common belief that things are more defined by what they aren\u0026rsquo;t than what they are. When everyone is fence riding, there\u0026rsquo;s no opposition to base your belief off of. The context of opinion is bland. As a rough example, very conservative parents somehow raise a liberal child. This is because the child knows exactly what they don\u0026rsquo;t want to be. To anyone listening, these takes sound fucking stupid. Someone who knows what they\u0026rsquo;re talking about will always be able to tell when someone else does not. If you understand what you\u0026rsquo;re talking about you\u0026rsquo;re going to have a good opinion, simple as. So here\u0026rsquo;s my advice to have good takes. 1) Think before you speak.\nThis is obvious, but seriously. Take is as an exercise to form a coherent sentence before trying to make it up on the spot. This will make you sound smart, and not dumb. I think that teachers should give a required 30 second to a minute of quiet thought after asking a question that requires it. The kids that are putting in the effort to come up with something fully formed are always going to be beaten out by the kids who say the first thing on their mind. Then that same student has to write essays to express their thoughts that they were forced to have!\n2) Understand the purpose of your opinion\nWhat are you really trying to say? What information do you want to be understood? What is your contribution *doing *to the state of the discourse? These are questions worth having answered before contributing.\n3) Read the news from a paper or RSS reader.\nYou are ultimately going to form your opinions based off of the current environment. Your information about the environment is crucial to having a fully formed take. As I mentioned before, news as seen on social media is practically garbage. I would recommend setting up an RSS reader that concatenates many news sites into one app. This will allow you to consciously choose when you want to get up to date rather than having it spit at you. Also getting your news from many sources will allow you to have a more holistic and unbiased view of current events.\\\n[]{#2}\n", 
+        "url": "http:\/\/localhost:1313\/takess\/"
+    },
+    
+    "http:\/\/localhost:1313\/tools\/": {
+        "title": "",
+        "tags": [],
+        "content": "back Tools I cannot live without This isn't going to be a text editor, distro, multiplexer list. You know about tmux and neovim. I wanna put you on to some cool stuff.\nHTTPrack: can download and mirror sites with faithful js and media rendering. All the {sites=\u0026quot;\u0026quot; here=\u0026quot;\u0026quot;} have been mirrored and automatically updated by me. Speaking of automation, next we have cron. Cron is a gnu util that can run commands over intervals of time. Using cron is a pain in the ass, but when you learn it it's worth it. There are many bloated electron \u0026quot;gui's\u0026quot; that are meant to simplify cron. But don't. ", 
+        "url": "http:\/\/localhost:1313\/tools\/"
+    },
+    
+    "http:\/\/localhost:1313\/wrestler\/": {
+        "title": "",
+        "tags": [],
+        "content": "back The Wrestler Confuses Me Spoilers\nThe Wrestler is a 2008 movie starring Mickey Rourke and Marisa Tomei. The movie is based around a once prolific professional wrestler coping primarily with his aging body. Other difficulties include financial instability, estrangement from his daughter, and an unrequited love. Rourke, playing the wrestler, is able to relate to this, being a boxer himself. So we have these plot points, right? Lets go through each one of them starting with the unrequited love.\nThe first time we see the love interest is in a strip club, where she works. Customers aren\u0026rsquo;t treating her well and our main character intervenes. It is implied by the way they talk to each other that they have known each other for a while. Eventually, he asks her out on a date. She initially denies, but changes her mind after they empathize because of their kids. During the date, he says some things that makes her regret the choice. She breaks it off, he gets mad. But before his last big match she quits being a stripper and goes to the show, trying to convince him not to preform.\nThe relationship here is pretty clear. Both of them use their bodies for work in way that may be harmful. Cassidy\u0026rsquo;s relationship to her job alienates people, and alienates her from herself. Randy does the same. Before his last match, he had a heart attack and was told not to wrestle anymore. Him choosing to wrestle despite this is him choosing the tail side of his double life. Cassidy, however quit. She cared more about being a mother, and a partner.\nRandy\u0026rsquo;s health is the driving conflict of the movie. Without the heart attack he would continue to sustain himself through it and simply get by. Like Cassidy, he\u0026rsquo;s shown to go through the motions of wrestling as if it were just a job. The heart attack served as a catalyst of change. He tried to get a job at a deli, but couldn\u0026rsquo;t maintain it because of anger issues, or something. He got recognized and decided to punch the meat slicing machine. In the context of the movie it makes sense, but Randy is only shown as a very level headed person except for this. In the last scene, he\u0026rsquo;s doing his last match. It\u0026rsquo;s built up as something he has to do. It\u0026rsquo;s a self sacrifice. It\u0026rsquo;s Randy returning to old habits because it\u0026rsquo;s simply all he knows how to do. We are dreading this match, and Cassidy is our voice. When she\u0026rsquo;s trying to talk Randy out of it he claims that the ring is where he belongs. He does it for the crowd. This is perplexing to me. Other than some apathetic signing of posters and a meat slicer punching his fans are rarely mentioned. His past as a more successful wrestler is a ghost throughout the movie. It haunts him through branded memorabilia and video games. But he seems at peace with it. He\u0026rsquo;s okay being washed up, as long as the bills are paid. Which is why this ending is so strange to me.\nDuring this final match he has another heart attack. He fights through it and hits his signature move from the top ropes, and the movie ends. I think this implies he died during the match. The mission of the movie was for Randy to step out of the shadow of his past self and find something else to live for. He fails in this. His mission to reconnect with his daughter also fails. His relationship with Cassidy had hope! But he died, so it failed. What then, is the point of the movie? Is it about sacrifice? Was he right to die for the art? Is it about the economy? Not really, he could\u0026rsquo;ve kept the job and been fine if he didn\u0026rsquo;t punch a meat slicer. When we see him kill himself for this match what are we supposed to think? Do we commend him for being himself or do we shun him for failing to become who he potentially could be? I don\u0026rsquo;t think the context of the movie really allows us any of these opinions. What we see is a failure to empathize with, and that is all.\n", 
+        "url": "http:\/\/localhost:1313\/wrestler\/"
+    },
+    
+    "http:\/\/localhost:1313\/categories\/": {
+        "title": "Categories",
+        "tags": [],
+        "content": "", 
+        "url": "http:\/\/localhost:1313\/categories\/"
+    },
+    
+    "http:\/\/localhost:1313\/tags\/": {
+        "title": "Tags",
+        "tags": [],
+        "content": "", 
+        "url": "http:\/\/localhost:1313\/tags\/"
+    },
+    
+}
+</script>
+
+
+    <script defer src="/js/lunr.js"></script>
+    <script defer src="/js/search.js"></script>
+
+
+</footer>
+
+</body>
+</html>
+

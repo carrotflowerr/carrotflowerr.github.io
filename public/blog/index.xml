@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on </title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blogs on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Feb 2025 18:54:56 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pope</title>
+      <link>http://localhost:1313/blog/pope/</link>
+      <pubDate>Sat, 22 Feb 2025 18:54:56 -0700</pubDate>
+      <guid>http://localhost:1313/blog/pope/</guid>
+      <description>So it&amp;rsquo;s looking like we&amp;rsquo;re gonna get a new pope soon. The following is a secular look at the most likely canidates, ranked by my personal opinion.&#xA;Mario Grech (Europe, 66) progressive youngest pope Francis&amp;rsquo; fav 9/10&#xA;Antonio Tagle (Asia, 65) &amp;ldquo;goodie two-shoes of the class&amp;rdquo; wants to expand into asia 7/10&#xA;Matteo Zuppi (Europe, 76) progressive young boring, few achievements great priest 7/10&#xA;Marc Ouellet popular in south America chill guy sexual assault allegations?</description>
+    </item>
+  </channel>
+</rss>

@@ -15,4 +15,4 @@ draft = true
 -   [Why powerusers have trouble with Linux\| Added:
     2024-12-18](../problem_with_linux)
 -   [A summery of potential popes | Added: 2/22/25](../pope)
-
+-   [common sense](../commonsense)

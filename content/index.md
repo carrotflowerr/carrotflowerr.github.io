@@ -6,6 +6,8 @@ draft = true
 # Zimblonia
 
 ------------------------------------------------------------------------
+*"But the essence of the garment is the body; and the essence of the
+body is the soul."* -- Rabbi Shim'On
 
 Evil Genius and shitposter extraordinaire\
 [Contact](https://carrotflowerr.github.io/contact-info.html) /
